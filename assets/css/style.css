@@ -33,6 +33,10 @@ a {
 }
 
 /* ===========================header======================== */
+header {
+  background: #050b20;
+}
+
 .header.fixed {
   position: sticky;
   top: -8px;
@@ -42,7 +46,7 @@ a {
   display: flex;
   align-items: center;
   padding-top: 28px;
-  padding-bottom: 0px;
+  padding-bottom: 28px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -83,4 +87,87 @@ a {
 
 .action {
   padding-left: 15px;
+}
+
+/* ===========================main======================== */
+main .list-filter .list-select {
+  display: flex;
+  width: 1170px;
+  height: 75.75px;
+  align-items: center;
+  border-radius: 80px;
+  background: #fff;
+  margin-top: 25px;
+  margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .list-filter .list-select .list-select-left {
+  width: 50%;
+}
+
+main .list-filter .list-select .list-select-right {
+  width: 50%;
+}
+
+/* ================================list-select-left==================== */
+.list-filter .list-select-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-filter .list-select-left .item {
+  display: flex;
+  justify-content: space-between;
+  width: 182px;
+  height: 36px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 5px;
+  margin-right: 6px;
+  align-items: center;
+}
+
+.list-filter .list-select-left .item p {
+  padding-top: 4px;
+}
+
+.list-filter .list-select-left .item .pic-more {
+  display: flex;
+  justify-content: end;
+  margin-top: 16px;
+  margin-bottom: 15px;
+  margin-right: 26px;
+}
+
+/* =====================list-select-right=================== */
+
+main .list-filter .list-select .list-select-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .list-filter .list-select .price {
+  display: flex;
+}
+
+main .list-filter .list-select .more {
+  display: flex;
+}
+
+main .list-filter .list-select button{
+  border: none;
+  background-color: transparent;
+}
+
+main .list-filter .list-select .btn-find {
+  display: flex;
+  border-radius: 60px;
+  border: 1px solid #405ff2;
+  background: #405ff2;
+  color: #fff;
+  margin-right: 25px;
+  cursor: pointer;
 }
