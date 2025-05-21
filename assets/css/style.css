@@ -11,7 +11,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
-  
+  background: #050b20;
 }
 
 /* ===========================common======================== */
@@ -19,9 +19,32 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  display: inline-block;
+  min-width: 153px;
+  padding: 0px 26px;
+  line-height: 48px;
+  color: #050b20;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 46px;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
 /* ===========================header======================== */
+.header.fixed {
+  position: sticky;
+  top: -8px;
+}
+
 .header .body {
   display: flex;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .header .body .nav {
@@ -33,10 +56,31 @@ a {
 }
 
 .main-content {
-  max-width: calc(100% - 48px);
+  max-width: calc(100% - 60px);
   width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.btn-sign-in {
+  padding: 15px;
+}
 
+.btn-sign-in a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.nav a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav li {
+  padding: 8px 15px;
+}
+
+.action {
+  padding-left: 15px;
+}
