@@ -5,11 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>list-v1</title>
   </head>
-  <body>
-    <h1>Welcome to web bán ô tô của pJuaan</h1>
+  <body style="height: 1000px;">
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body">
+          <!-- logo -->
+          <img src="./assets/imgs/logo.svg" alt="box car" class="logo" />
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+                <img src="./assets/imgs/extend.svg" alt="" class="extend">
+              </li>
+              <li>
+                <a href="#">Listings</a>
+                <img src="./assets/imgs/extend.svg" alt="" class="extend">
+              </li>
+              <li>
+                <a href="#">Blog</a>
+                <img src="./assets/imgs/extend.svg" alt="" class="extend">
+              </li>
+              <li>
+                <a href="#">Pages</a>
+                <img src="./assets/imgs/extend.svg" alt="" class="extend">
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- btn sign in -->
+           <div class="sign-in">
+            <img src="./assets/icons/Icon_person.svg" alt="" class="sign-in">
+                <a href="#">Sign in</a>
+           </div>
+           <!-- btn-action -->
+           <div class="action">
+            <a href="" class="submit">Submit Listing</a>
+           </div>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

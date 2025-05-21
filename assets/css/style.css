@@ -10,4 +10,33 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  
 }
+
+/* ===========================common======================== */
+a {
+  text-decoration: none;
+}
+
+/* ===========================header======================== */
+.header .body {
+  display: flex;
+}
+
+.header .body .nav {
+  margin-left: auto;
+}
+
+.header .body .nav ul {
+  display: flex;
+}
+
+.main-content {
+  max-width: calc(100% - 48px);
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
