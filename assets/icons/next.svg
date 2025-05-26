@@ -1,0 +1,26 @@
+<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="12" height="13" fill="#F5F5F5"/>
+<g id="list v1">
+<rect width="1920" height="2919.53" transform="translate(-1002 -2021)" fill="white"/>
+<rect width="1920" height="2919.53" transform="translate(-1002 -2021)" fill="white"/>
+<g id="Section">
+<g id="List">
+<g id="Item &#226;&#134;&#146; Link">
+<rect x="-23.5" y="-11.0601" width="59" height="37" rx="18.5" fill="#F9FBFC"/>
+<rect x="-23.5" y="-11.0601" width="59" height="37" rx="18.5" stroke="#E9E9E9"/>
+<g id="Icon" clip-path="url(#clip0_8_42)">
+<path id="Vector" d="M9.17749 7.03994L4.0218 12.1999C3.86194 12.3599 3.66877 12.4399 3.44229 12.4399C3.21581 12.4399 3.01598 12.3599 2.84279 12.1999C2.6696 12.0399 2.58301 11.8399 2.58301 11.5999C2.58301 11.3599 2.67626 11.1599 2.86277 10.9999L7.41896 6.43994L2.86277 1.87994C2.67626 1.71994 2.58301 1.51994 2.58301 1.27994C2.58301 1.03994 2.6696 0.839942 2.84279 0.679942C3.01598 0.519941 3.21581 0.439941 3.44229 0.439941C3.66877 0.439941 3.86194 0.519941 4.0218 0.679942L9.17749 5.83994C9.364 5.99994 9.45726 6.19994 9.45726 6.43994C9.45726 6.67994 9.364 6.87994 9.17749 7.03994Z" fill="#050B20"/>
+</g>
+</g>
+</g>
+</g>
+<g id="Background">
+<rect width="1920" height="460" transform="translate(-1002 339.44)" fill="#050B20"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_8_42">
+<rect width="11.96" height="12" fill="white" transform="matrix(1 0 0 -1 0.0200195 12.4399)"/>
+</clipPath>
+</defs>
+</svg>

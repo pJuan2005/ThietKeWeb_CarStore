@@ -19,6 +19,17 @@ a {
   text-decoration: none;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+hr {
+  border: 1px solid #e9e9e9;
+}
+
 .btn {
   display: inline-block;
   min-width: 153px;
@@ -32,6 +43,9 @@ a {
   background: #fff;
 }
 
+.break-all {
+  word-break: break-all;
+}
 /* ===========================header======================== */
 header {
   background: #050b20;
@@ -39,7 +53,8 @@ header {
 
 .header.fixed {
   position: sticky;
-  top: -8px;
+  top: -4px;
+  z-index: 100;
 }
 
 .header .body {
@@ -61,6 +76,13 @@ header {
 
 .main-content {
   max-width: calc(100% - 60px);
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content-2 {
+  max-width: calc(100% - 260px);
   width: 1400px;
   margin-left: auto;
   margin-right: auto;
@@ -127,6 +149,7 @@ main .list-filter .list-select .list-select-right {
   margin-left: 5px;
   margin-right: 6px;
   align-items: center;
+  cursor: pointer;
 }
 
 .list-filter .list-select-left .item p {
@@ -151,13 +174,15 @@ main .list-filter .list-select .list-select-right {
 
 main .list-filter .list-select .price {
   display: flex;
+  cursor: pointer;
 }
 
 main .list-filter .list-select .more {
   display: flex;
+  cursor: pointer;
 }
 
-main .list-filter .list-select button{
+main .list-filter .list-select button {
   border: none;
   background-color: transparent;
 }
@@ -170,4 +195,420 @@ main .list-filter .list-select .btn-find {
   color: #fff;
   margin-right: 25px;
   cursor: pointer;
+}
+
+/* ===============================listening results========================== */
+.list-results {
+  background-color: #fff;
+  border-radius: 80px 80px 80px 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.choose {
+  display: flex;
+  align-items: center;
+}
+
+.choose span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.choose a {
+  color: #050b20;
+  font-size: 1.5rem;
+  line-height: 1.85%;
+}
+
+.choose a:hover {
+  color: #405ff2;
+  font-size: 1.5rem;
+}
+
+.list-results h1 {
+  position: relative;
+  margin-top: 12px;
+  color: #050b20;
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 40px;
+}
+
+.list-results .sort {
+  display: flex;
+  justify-content: end;
+  margin-top: 42px;
+  align-items: center;
+}
+
+.list-results .sort .title {
+  color: #818181;
+  font-size: 1.5rem;
+}
+
+.list-results .sort .sort-choose {
+  display: flex;
+  padding: 6px 13px;
+  border-radius: 8px;
+  border: 1px solid #e9e9e9;
+  width: 154px;
+  height: 28px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 13.65px;
+}
+
+/* =============================item======================= */
+.list-car {
+  margin-top: 52px;
+  margin-bottom: 40px;
+}
+
+.list-car .item {
+  position: relative;
+  border: 1px solid #e9e9e9;
+  border-radius: 16px;
+  flex: 1;
+}
+
+.list-car .item:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.row-list-car-1 .item .item-top {
+  height: 50%;
+}
+
+.row-list-car-1 .item .item-bottom {
+  height: 50%;
+}
+
+.row-list-car-1 {
+  display: flex;
+  gap: 30px;
+}
+
+.row-list-car-1 .car-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.row-list-car-1 .btn.btn-evaluate {
+  position: absolute;
+  color: #fff;
+  border: none;
+  background: #3d923a;
+  top: 13px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  min-width: 5px;
+  border-radius: 30px;
+  height: 35px;
+}
+
+.row-list-car-1 .btn.btn-evaluate:hover {
+  cursor: pointer;
+}
+
+.row-list-car-1 .btn.btn-evaluate.low-mileage {
+  background: #405ff2;
+}
+
+.row-list-car-1 .favourite {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+
+.row-list-car-1 .favourite:hover {
+  cursor: pointer;
+}
+
+.item-bottom {
+  margin: 16px 31px 5px;
+}
+
+.item-bottom .car-name {
+  color: #050b20;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.item-bottom .detail-car {
+  margin-top: 8px;
+}
+
+.feature .feature-top {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-item {
+  margin-bottom: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-item .price {
+  color: #050b20;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.footer-item .price .detail img {
+  margin-left: 9px;
+}
+
+.hang-sau {
+  margin-top: 30px;
+}
+
+.list-car span {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-decoration: line-through;
+}
+
+.list-number {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+
+.list-number .number {
+  display: flex;
+  gap: 8px;
+  border-radius: 19.75px;
+  background: #fff;
+}
+
+.list-number .number .text {
+  color: #050b20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  width: 40px;
+  height: 39px;
+  border-radius: 50%;
+}
+
+.list-number .number .text:hover {
+  color: #fff;
+  border-radius: 19.75px;
+  border: 1px solid #050b20;
+  background: #050b20;
+  cursor: pointer;
+}
+
+.list-number .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 38px;
+  border-radius: 30px;
+  border: 1px solid #e9e9e9;
+  background: #f9fbfc;
+  cursor: pointer;
+}
+
+.join {
+  display: flex;
+  justify-content: space-between;
+}
+
+.join .join-left {
+  margin-top: 67px;
+  margin-bottom: 67px;
+}
+
+.join .join-left h1 {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.join .join-left p {
+  margin-top: 10px;
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+.join .join-right {
+  display: flex;
+  width: 512px;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.13);
+  margin-top: 65px;
+  margin-bottom: 65px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.join-right p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+
+.btn.btn-sign-up {
+  display: flex;
+  color: #fff;
+  width: 115.31px;
+  height: 51.75px;
+  padding: 11.125px 30.637px 12.875px 31px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  border: 1px solid #405ff2;
+  background: #405ff2;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.info .info-content h3 {
+  margin-top: 55px;
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 19px;
+}
+
+.info .info-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.info .info-content .list p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-bottom: 12px;
+}
+
+.list-app-on-mobile .app-store,
+.google-play {
+  display: flex;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  width: 198.8px;
+  height: 60px;
+  flex-shrink: 0;
+  gap: 20px;
+}
+
+.list-app-on-mobile .app-store img,
+.google-play img {
+  margin-top: 17px;
+  margin-bottom: 18px;
+  margin-left: 25px;
+  width: 19.061px;
+  height: 25px;
+}
+
+.list-app-on-mobile .app-store {
+  margin-bottom: 12px;
+}
+
+.list-app-on-mobile .guide {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+h5 {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.info-content h3 {
+  margin-top: 32px;
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 27px;
+}
+
+.info-content .guide {
+  cursor: pointer;
+}
+
+.info-content .list-more {
+  display: flex;
+  gap: 9px;
+}
+
+.info-content .list-more .mxh {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+}
+
+.info-content .list-more img {
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+.cre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.cre p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+.cre-right {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.cre-right img {
+  cursor: default;
+}
+
+.attract {
+  position: absolute;
+  right: 20px;
 }
