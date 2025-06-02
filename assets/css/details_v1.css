@@ -1,0 +1,1334 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* khôi phục cỡ chữ mặc định */
+
+body {
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  background: #050b20;
+}
+
+/* =========================common===================== */
+a {
+  text-decoration: none;
+}
+
+hr {
+  border-top: 1px solid #e1e1e1;
+}
+.btn {
+  display: inline-block;
+  min-width: 153px;
+  padding: 0px 26px;
+  line-height: 48px;
+  color: #050b20;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 46px;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.link {
+  border-radius: 12px;
+  background: rgba(64, 95, 242, 0.1);
+  display: flex;
+  min-width: 286.47px;
+  padding: 12.125px 39.665px 13.875px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10.84px;
+  cursor: pointer;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===========================header======================== */
+header {
+  background: #050b20;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -4px;
+  z-index: 100;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header .body .nav {
+  margin-left: auto;
+}
+
+.header .body .nav ul {
+  display: flex;
+}
+
+.main-content {
+  max-width: calc(100% - 60px);
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content-2 {
+  max-width: calc(100% - 260px);
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-sign-in {
+  padding: 15px;
+}
+
+.btn-sign-in a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.nav a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: "DM Sans";
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.nav li {
+  padding: 8px 15px;
+}
+
+.action {
+  padding-left: 15px;
+}
+
+/* ===================main===================== */
+body main {
+  border-radius: 80px 80px 80px 80px;
+  background: #fff;
+}
+
+.main-car {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+main .list-subject {
+  margin-top: 80px;
+  gap: 5px;
+  display: flex;
+}
+
+main .list-subject p {
+  display: flex;
+  color: #405ff2;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+main .list-subject .name {
+  color: #050b20;
+}
+
+.info-car {
+  display: flex;
+  margin-top: 16px;
+  justify-content: space-between;
+}
+
+.info-car-left h1 {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.info-car-left .desc {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-bottom: 25px;
+}
+
+.info-car-more {
+  display: flex;
+  color: #405ff2;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  gap: 10px;
+}
+
+.info-car-more .time {
+  display: flex;
+  border-radius: 40px;
+  background: #e9f2ff;
+  padding: 5.125px 19.69px 6.875px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-car-more .miles {
+  display: flex;
+  padding: 5.125px 19.628px 6.875px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: #e9f2ff;
+}
+
+.info-car-more .petrol {
+  display: flex;
+  border-radius: 40px;
+  background: #e9f2ff;
+  padding: 5.125px 19.69px 6.875px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-car-right .action {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.info-car-right .action p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-right: 10px;
+}
+
+.info-car-right .action .action-1,
+.action-2,
+.action-3 {
+  display: flex;
+  align-items: center;
+}
+
+.info-car-right .action .icon {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 11.5px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 1px solid #e9e9e9;
+}
+
+.info-car-right .price {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+  margin-bottom: 4px;
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.info-car-right .offer {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.info-car-right .offer p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.list-pic {
+  margin-top: 20px;
+  display: flex;
+}
+
+.list-pic .car-left {
+  position: relative;
+  width: 50%;
+  height: 550px;
+  margin-right: 10px;
+}
+
+.btn-great {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: none;
+  border-radius: 30px;
+  background: #3d923a;
+  display: flex;
+  min-width: 104.23px;
+  min-height: 29.89px;
+  padding: 1.05px 14.686px 2.94px 15px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn-great p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.85;
+  cursor: pointer;
+}
+
+.video {
+  left: 10px;
+  bottom: 10px;
+  position: absolute;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  width: 102.47px;
+  padding: 5.125px 19.677px 6.875px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.video img {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-pic .car-right {
+  width: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 270px 270px;
+  gap: 10px;
+}
+
+.car-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========================feedback================== */
+.main-review {
+  margin-top: 50px;
+  display: flex;
+  gap: 70px;
+}
+
+.main-review-left {
+  width: 65%;
+}
+
+.main-review-left h1 {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1;
+}
+/* overview */
+.overview h1 {
+  margin-bottom: 32px;
+}
+
+.overview-left {
+  flex: 1;
+}
+
+.overview-right {
+  width: 50%;
+}
+
+.overview .orverview-content {
+  display: flex;
+  gap: 20px;
+}
+
+.overview .orverview-content .ngang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  height: 19px;
+}
+.overview .orverview-content .ngang p {
+  margin-bottom: 31px;
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+.overview .orverview-content .group {
+  display: flex;
+  gap: 12px;
+}
+.overview .orverview-content .group img {
+  margin-bottom: 31px;
+}
+
+.ngang .detail {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.overview .title {
+  margin-top: 31px;
+  margin-bottom: 28px;
+}
+
+/* desc */
+
+.main-review .desc {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.main-review .desc p {
+  margin-top: 31px;
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+.main-review .desc p + p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-review .desc .bottom-desc {
+  display: flex;
+  gap: 15px;
+}
+
+.main-review .desc .bottom-desc p {
+  display: flex;
+  margin-top: auto;
+  color: #405ff2;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+  text-transform: capitalize;
+}
+
+.main-review .desc .bottom-desc .link-Brochure {
+  min-width: 236px;
+}
+
+.main-review .feature {
+  margin-top: 50px;
+}
+
+.main-review .feature .feature-group .group-1,
+.group-2,
+.group-3,
+.group-4 {
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+
+.main-review .feature .feature-group {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.main-review .feature .feature-group h1 {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.85;
+  margin-bottom: 5px;
+}
+
+.main-review .feature .feature-group .cover {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.main-review .feature .feature-group .cover div {
+  width: 18px;
+  height: 18px;
+  background-color: #405ff21a;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.main-review .feature .feature-group .cover p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+/* dimension */
+.dimension h1 {
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+
+.dimension .content-dimension {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 20px;
+}
+
+.content-dimension .group {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.content-dimension .group .detail {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.content-dimension .group .title {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+/* engine */
+.engine h1 {
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+
+.engine .engine-content {
+  display: flex;
+  margin-bottom: 38px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.engine-content .engine-left,
+.engine-right {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.engine .engine-content .title p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-bottom: 22px;
+}
+
+.engine .engine-content .detail p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+  margin-bottom: 22px;
+  margin-right: 110px;
+}
+/* calculator */
+.calculator h1 {
+  margin-top: 50px;
+  margin-bottom: 33px;
+}
+
+.calculator .calculator-content {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  gap: 32px;
+}
+
+.calculator .farme {
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  min-width: 390px;
+}
+
+.calculator .calculator-content p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-left: 15px;
+}
+
+.calculator .calculator-content h5 {
+  color: #818181;
+  font-family: "DM Sans";
+  font-size: 1.3rem;
+  line-height: 1.85;
+  margin-top: 4px;
+  margin-left: 14px;
+}
+
+.calculator .calculator-content .bottom {
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+
+.calculator .link-calculator {
+  border-radius: 16px;
+  border: 1px solid #405ff2;
+  background: #405ff2;
+  width: 210px;
+  height: 55px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+/* review */
+
+.review h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.head-review .head-review-content {
+  height: 220px;
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.head-review-content .content-group {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-review-content .content-group .item {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.head-review-content .content-group .right {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.head-review-content .content-group h3 {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.head-review-content .content-group p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.head-review-content .content-group .number {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.content-review {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.content-review .ava {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.content-review .ava img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-review .feed-back .head-comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-review .feed-back .head-comment .name {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.85;
+  margin-left: 12px;
+  margin-right: 15px;
+}
+
+.content-review .feed-back .head-comment .date {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  line-height: 1.85;
+}
+
+.content-review .feed-back .rate-comment {
+  display: flex;
+  gap: 7px;
+}
+
+.content-review .desc {
+  margin-top: 14px;
+}
+
+.content-review .add-review .rate-star {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-review .add-review .rate-star .title p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.content-review .add-review .rate-star .star img {
+  margin-bottom: 29px;
+}
+
+.content-review .input {
+  display: flex;
+  gap: 22px;
+}
+
+.content-review .input .link-name,
+.link-email {
+  border-radius: 12px;
+  background: rgba(64, 95, 242, 0.1);
+  justify-content: center;
+  align-items: center;
+  gap: 10.84px;
+  cursor: text;
+  min-width: 400px;
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+}
+
+.content-review .input p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  margin-left: 15px;
+  margin-bottom: 9px;
+}
+
+.content-review .input .subject {
+  color: #818181;
+  font-family: "DM Sans";
+  font-size: 1, 3rem;
+  line-height: 1.85;
+  margin-top: 4px;
+  margin-left: 14px;
+}
+
+.content-review .check {
+  margin-top: 20px;
+  margin-bottom: 22px;
+}
+
+.area {
+  margin-bottom: 31px;
+}
+
+.area .khung {
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  height: 198px;
+  cursor: text;
+}
+
+.area p {
+  position: relative;
+  top: 4px;
+  left: 14px;
+  cursor: text;
+  color: #818181;
+  font-family: "DM Sans";
+  font-size: 1.3rem;
+  line-height: 1.85;
+}
+
+.review .submit p {
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.review .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 55px;
+  border-radius: 16px;
+  border: 1px solid #405ff2;
+  background: #405ff2;
+  cursor: pointer;
+}
+
+/* related */
+.related .related-head {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.related .related-head h1 {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.related .related-head .view-all {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.related .related-head .view-all p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.related .related-car .list-car {
+  display: flex;
+  gap: 30px;
+}
+
+.related .related-car .list-car .item .pic-car {
+  width: 100%;
+  height: 218px;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.related .related-car .list-car .item {
+  position: relative;
+  border-radius: 16px 16px 16px 16px;
+  border-right: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  flex: 1;
+}
+
+.related .related-car .list-car .item:hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.related .related-car .list-car .item .btn-great {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+}
+
+.related .related-car .list-car .item .save img {
+  width: 12px;
+  height: 12px;
+}
+
+.related .related-car .list-car .item .save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background: #fff;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.related .related-car .list-car .item .bottom-item {
+  padding: 16px 31px 19px;
+}
+
+.related .related-car .list-car .item .bottom-item .name {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.related .related-car .list-car .item .bottom-item .desc {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+.related .related-car .list-car .like .btn-price-great {
+  display: flex;
+  max-width: 104px;
+  height: 30px;
+  padding: 1.05px 14.686px 2.94px 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: #3d923a;
+}
+
+.related .related-car .list-car .like .low-mileage {
+  border-radius: 30px;
+  background: #405ff2;
+}
+
+.related .related-car .list-car .item .bottom-item .feature-car {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.related .related-car .list-car .item .bottom-item .feature-car p {
+  margin-top: 11px;
+}
+
+.related .related-car .list-car .item .bottom-item .price span {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-decoration-line: line-through;
+}
+
+.related .related-car .list-car .item .bottom-item .price {
+  margin-top: 16px;
+}
+
+.related .related-car .list-car .item .bottom-item .price .price-live {
+  display: flex;
+  justify-content: space-between;
+}
+
+.related
+  .related-car
+  .list-car
+  .item
+  .bottom-item
+  .price
+  .price-live
+  .view-detail {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.related .related-car .list-car .item .bottom-item .price .price-live .cost {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.related
+  .related-car
+  .list-car
+  .item
+  .bottom-item
+  .price
+  .price-live
+  .view-detail
+  p {
+  color: #405ff2;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.related .action {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  gap: 25px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.related .action .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+}
+
+/* =======================main-review-right===================== */
+.main-review-right {
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.review-right-content {
+  border-radius: 16px;
+  border: 1px solid #e9e9e9;
+  width: 100%;
+  padding: 31px;
+  height: auto;
+}
+
+.review-right-content .profile .ava {
+  display: flex;
+  border-radius: 40px;
+  border: 1px solid #e9e9e9;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-right-content .profile h2 {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 12px;
+}
+
+.review-right-content .profile p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-top: 5px;
+}
+
+.review-right-content .profile .contact {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-right-content .profile .contact .gps,
+.phone {
+  display: flex;
+}
+
+.review-right-content .profile .contact .thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(64, 95, 242, 0.1);
+  margin-right: 7px;
+}
+
+.review-right-content .profile .contact p {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.review-right-content .profile .mes {
+  margin-top: 30px;
+  border-radius: 16px;
+  border: 1px solid #405ff2;
+  background: #405ff2;
+}
+
+.review-right-content .profile .mes p {
+  color: #fff;
+}
+
+.review-right-content .profile .chat {
+  margin-top: 15px;
+  border-radius: 16px;
+  border: 1px solid #60c961;
+  background: #fff;
+}
+
+.review-right-content .profile .chat p {
+  color: #60c961;
+}
+
+.review-right-content .profile .more {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* =========================footer=============== */
+
+.join {
+  display: flex;
+  justify-content: space-between;
+}
+
+.join .join-left {
+  margin-top: 67px;
+  margin-bottom: 67px;
+}
+
+.join .join-left h1 {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.join .join-left p {
+  margin-top: 10px;
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+.join .join-right {
+  display: flex;
+  width: 512px;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.13);
+  margin-top: 65px;
+  margin-bottom: 65px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.join-right p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+
+.btn.btn-sign-up {
+  display: flex;
+  color: #fff;
+  width: 115.31px;
+  height: 51.75px;
+  padding: 11.125px 30.637px 12.875px 31px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  border: 1px solid #405ff2;
+  background: #405ff2;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.info .info-content h3 {
+  margin-top: 55px;
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 19px;
+}
+
+.info .info-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.info .info-content .list p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-bottom: 12px;
+}
+
+.list-app-on-mobile .app-store,
+.google-play {
+  display: flex;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  width: 198.8px;
+  height: 60px;
+  flex-shrink: 0;
+  gap: 20px;
+}
+
+.list-app-on-mobile .app-store img,
+.google-play img {
+  margin-top: 17px;
+  margin-bottom: 18px;
+  margin-left: 25px;
+  width: 19.061px;
+  height: 25px;
+}
+
+.list-app-on-mobile .app-store {
+  margin-bottom: 12px;
+}
+
+.list-app-on-mobile .guide {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+h5 {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.info-content h3 {
+  margin-top: 32px;
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 27px;
+}
+
+.info-content .guide {
+  cursor: pointer;
+}
+
+.info-content .list-more {
+  display: flex;
+  gap: 9px;
+}
+
+.info-content .list-more .mxh {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+}
+
+.info-content .list-more img {
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+.cre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.cre p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+}
+
+.cre-right {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.cre-right img {
+  cursor: default;
+}
+
+.attract {
+  position: absolute;
+  right: 20px;
+}

@@ -431,6 +431,8 @@ main .list-filter .list-select .btn-find {
   cursor: pointer;
 }
 
+/* ============================footer============================ */
+
 .join {
   display: flex;
   justify-content: space-between;
