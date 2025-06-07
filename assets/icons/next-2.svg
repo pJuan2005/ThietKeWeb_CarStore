@@ -1,0 +1,23 @@
+<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="12" height="13" fill="#F5F5F5"/>
+<g id="blog v1">
+<rect width="1920" height="2478.84" transform="translate(-956 -1540)" fill="white"/>
+<rect width="1920" height="2478.84" transform="translate(-956 -1540)" fill="white"/>
+<g id=" Main">
+<g id="Navigation">
+<g id="Link">
+<rect x="-23.5" y="-11" width="59" height="37" rx="18.5" fill="#F9FBFC"/>
+<rect x="-23.5" y="-11" width="59" height="37" rx="18.5" stroke="#E9E9E9"/>
+<g id="Icon" clip-path="url(#clip0_8_42)">
+<path id="Vector" d="M9.17734 7.1L4.02165 12.26C3.86179 12.42 3.66862 12.5 3.44214 12.5C3.21566 12.5 3.01583 12.42 2.84264 12.26C2.66945 12.1 2.58286 11.9 2.58286 11.66C2.58286 11.42 2.67611 11.22 2.86262 11.06L7.41881 6.5L2.86262 1.94C2.67611 1.78 2.58286 1.58 2.58286 1.34C2.58286 1.1 2.66945 0.900001 2.84264 0.740001C3.01583 0.58 3.21566 0.5 3.44214 0.5C3.66862 0.5 3.86179 0.58 4.02165 0.740001L9.17734 5.9C9.36385 6.06 9.45711 6.26 9.45711 6.5C9.45711 6.74 9.36385 6.94 9.17734 7.1Z" fill="#050B20"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_8_42">
+<rect width="11.96" height="12" fill="white" transform="matrix(1 0 0 -1 0.0200005 12.5)"/>
+</clipPath>
+</defs>
+</svg>

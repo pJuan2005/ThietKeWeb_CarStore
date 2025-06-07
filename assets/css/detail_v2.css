@@ -7,14 +7,13 @@ html {
 }
 
 /* khôi phục cỡ chữ mặc định */
-
 body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
   background: #050b20;
 }
 
-/* =========================common===================== */
+/* =============================common======================== */
 a {
   text-decoration: none;
 }
@@ -123,7 +122,7 @@ header {
   padding-left: 15px;
 }
 
-/* ===================main===================== */
+/* ===================================main==============================*/
 body main {
   border-radius: 80px 80px 80px 80px;
   background: #fff;
@@ -135,7 +134,6 @@ body main {
 }
 
 main .list-subject {
-  margin-top: 80px;
   gap: 5px;
   display: flex;
 }
@@ -154,6 +152,7 @@ main .list-subject .name {
 
 .info-car {
   display: flex;
+  position: relative;
   margin-top: 16px;
   justify-content: space-between;
 }
@@ -188,6 +187,7 @@ main .list-subject .name {
   border-radius: 40px;
   background: #e9f2ff;
   padding: 5.125px 19.69px 6.875px 20px;
+  height: 39px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -197,6 +197,18 @@ main .list-subject .name {
   display: flex;
   padding: 5.125px 19.628px 6.875px 20px;
   justify-content: center;
+  height: 39px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: #e9f2ff;
+}
+
+.info-car-more .auto {
+  display: flex;
+  padding: 5.125px 19.628px 6.875px 20px;
+  justify-content: center;
+  height: 39px;
   align-items: center;
   gap: 10px;
   border-radius: 40px;
@@ -209,145 +221,45 @@ main .list-subject .name {
   background: #e9f2ff;
   padding: 5.125px 19.69px 6.875px 20px;
   justify-content: center;
+  height: 39px;
   align-items: center;
   gap: 10px;
 }
-/* info car right */
-.info-car-right .action {
+
+/* info car-right */
+.info-car .info-car-right .action {
   display: flex;
-  gap: 20px;
-  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
-.info-car-right .action p {
-  color: #050b20;
-  font-family: "DM Sans";
-  font-size: 1.5rem;
-  line-height: 1.85;
-  margin-right: 10px;
-}
-
-.info-car-right .action .action-1,
+.action-1,
 .action-2,
 .action-3 {
   display: flex;
   align-items: center;
+  gap: 7px;
 }
 
-.info-car-right .action .icon {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  padding: 11.5px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+.action-1,
+.action-2 {
+  margin-right: 20px;
+}
+
+.info-car .info-car-right .action img {
+  width: 13px;
+  height: 13px;
+}
+
+.info-car .info-car-right .action .icon {
   border-radius: 18px;
   border: 1px solid #e9e9e9;
-}
-
-.info-car-right .price {
+  width: 36px;
+  height: 36px;
   display: flex;
-  justify-content: end;
-  margin-top: 15px;
-  margin-bottom: 4px;
-  color: #050b20;
-  font-family: "DM Sans";
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.info-car-right .offer {
-  display: flex;
-  justify-content: end;
-  gap: 8px;
-}
-
-.info-car-right .offer p {
-  color: #050b20;
-  font-family: "DM Sans";
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.85;
-}
-/* list pic */
-.list-pic {
-  margin-top: 20px;
-  display: flex;
-}
-
-.list-pic .car-left {
-  position: relative;
-  width: 50%;
-  height: 550px;
-  margin-right: 10px;
-}
-
-.btn-great {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  border: none;
-  border-radius: 30px;
-  background: #3d923a;
-  display: flex;
-  min-width: 104.23px;
-  min-height: 29.89px;
-  padding: 1.05px 14.686px 2.94px 15px;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-}
-
-.btn-great p {
-  color: #fff;
-  font-family: "DM Sans";
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.85;
-  cursor: pointer;
-}
-
-.video {
-  left: 10px;
-  bottom: 10px;
-  position: absolute;
-  border-radius: 12px;
-  background: #fff;
-  display: flex;
-  width: 102.47px;
-  padding: 5.125px 19.677px 6.875px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.video img {
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-}
-
-.car-left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.list-pic .car-right {
-  width: auto;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 270px 270px;
-  gap: 10px;
-}
-
-.car-right img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /* ========================feedback================== */
@@ -368,7 +280,64 @@ main .list-subject .name {
   font-weight: 500;
   line-height: 1;
 }
+
+/* thumb car */
+.main-review .thumb-car {
+  position: relative;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.main-review .thumb-car img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.main-review .thumb-car .btn-sale {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 30px;
+  background: #405ff2;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  height: 30px;
+}
+
+.main-review .thumb-car .btn-sale p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.main-review .thumb-car .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 12px;
+  background: #fff;
+  width: 102px;
+  height: 40px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.main-review .thumb-car .video img {
+  width: 17px;
+  height: 17px;
+}
+
 /* overview */
+
 .overview h1 {
   margin-bottom: 32px;
 }
@@ -947,15 +916,26 @@ main .list-subject .name {
   margin-top: 8px;
 }
 
-.related .related-car .list-car .like .btn-price-great {
+.related .related-car .list-car .like .btn-great p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.related .related-car .list-car .like .btn-great {
   display: flex;
-  max-width: 104px;
+  max-width: 114px;
   height: 30px;
   padding: 1.05px 14.686px 2.94px 15px;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
   background: #3d923a;
+  border: none;
+  min-width: 104px;
+  height: 30px;
 }
 
 .related .related-car .list-car .like .low-mileage {
@@ -1053,12 +1033,85 @@ main .list-subject .name {
   box-sizing: border-box;
 }
 
-.review-right-content {
+.review-right-content .purchase,
+.profile {
   border-radius: 16px;
   border: 1px solid #e9e9e9;
   width: 100%;
   padding: 31px;
   height: auto;
+}
+
+.review-right-content .purchase {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.review-right-content .purchase .title {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.review-right-content .purchase .price {
+  display: flex;
+  gap: 5px;
+}
+
+.review-right-content .purchase .price .old {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+  line-height: 1.87;
+  text-decoration: line-through;
+}
+
+.review-right-content .purchase .price .new {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.review-right-content .purchase .save {
+  color: #050b20;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin-bottom: 30px;
+}
+
+.review-right-content .purchase .offer p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5re1;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.review-right-content .purchase .offer {
+  border-radius: 16px;
+  border: 1px solid #405ff2;
+  background: #405ff2;
+  margin-bottom: 20px;
+}
+
+.review-right-content .purchase .test p {
+  color: #050b20;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
+.review-right-content .purchase .test {
+  border-radius: 16px;
+  border: 1px solid #050b20;
+  background: #fff;
 }
 
 .review-right-content .profile .ava {
